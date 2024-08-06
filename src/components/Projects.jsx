@@ -1,6 +1,7 @@
 import React from "react";
 import medium from "../assets/medium.png";
 import ecommerce from "../assets/ecommerce.png";
+import fintech from "../assets/fintech.png";
 
 
 const Projects = () => {
@@ -8,16 +9,23 @@ const Projects = () => {
     {
       img: medium,
       title: "Medium Clone",
-      desc: " A Blog sharing application. Built with React, Tailwind CSS, Node.JS, PostgreSQL, Prisma, and cloudflare ",
+      desc: "Developed Blog sharing full-stack web application using Node serving a REST API with React as the frontend. Implemented user authentication using Jwt and Zod library. Serverless deployment of backend on Cloudflare workers and frontend on vercel.",
       live: "https://medium-clone-dl3tzl4vb-bilal1khans-projects.vercel.app/",
       code: "https://github.com/bilal1khan/medium-clone",
     },
     {
       img: ecommerce,
       title: "Ecommerce Application",
-      desc: "An ecommerce application. Built with React, Spring Boot, Hibernate, MySQL and Azure",
+      desc: "Developed an ecommerce full-stack web application using Spring Boot serving a REST API with React as the frontend. MySQL as database and connected to backend using Hibernate Spring data JPA. Deployed backend on Azure and frontend on vercel.",
       live: "https://ecommerce-frontend-one-ruby.vercel.app/",
       code: "https://github.com/bilal1khan/Ecommerce-Web-App",
+    },
+    {
+      img: fintech,
+      title: "Fintech Application",
+      desc: "Developed a fintech full-stack web application using Express serving a GraphQL API with React as the frontend. PostgreSQL as database and connected to backend using Hasura. Deployed backend and frontend on vercel.",
+      live: "https://fintech-frontend.vercel.app/",
+      code: "https://github.com/bilal1khan/fintech-frontend",
     },
   ];
 
@@ -48,7 +56,7 @@ const Projects = () => {
             <div className="relative" key={i}>
               <img src={project.img} alt={project.title} className="h-80" />
               <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
-                <p className="py-5 text-center font-bold px-2 text-white">
+                <p className="py-5 text-center font-bold px-2 bg-[#FBBC04]">
                   {project.desc}
                 </p>
 
